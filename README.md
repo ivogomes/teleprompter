@@ -4,9 +4,10 @@ Write and save scripts, read them with scrolling text you can resize and mirror,
 
 | File | What it is |
 | --- | --- |
-| `index.html` | The page that ships (`/tools/teleprompter/`). A self-contained bundle of `app.html`, the runtime and React. Edit `app.html` first, then apply the same change here (see below). |
+| `index.html` | The page that ships (`/tools/teleprompter/` on ivogomes.com, whose deploy checks out this repo; it also runs on its own from any static server). A self-contained bundle of `app.html`, the runtime and React. Edit `app.html` first, then apply the same change here (see below). |
 | `app.html` | Source of the whole app: script list, editor, appearance settings, sync, and the full-screen presenter view. |
 | `default-script.txt` | The text of the app's default script, titled "Example Script", in the app's text format. Paste it into a new script to reuse it. |
+| `shared/` | The shared tool styles, copied from the site (`src/tokens.css`, `src/tools.css`, `src/tools-look.css`) so this runs on its own. |
 | `teleprompter.css` | The tool's styles: buttons (`.tp-btn`), slider (`.tp-range`), toggle (`.tp-switch`) and the header sync controls, all built on the site tokens. Loaded by the page. |
 | `runtime.js` | Generated runtime that renders `app.html`. Do not edit. |
 | `.thumbnail` | Preview image for the design tool. |
